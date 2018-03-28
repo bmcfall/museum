@@ -1,6 +1,7 @@
 require "minitest/autorun"
 require "minitest/pride"
 require "./lib/patron"
+require "pry"
 
 class PatronTest < Minitest::Test
 
@@ -19,6 +20,6 @@ class PatronTest < Minitest::Test
   def test_patron_has_interest_attribute
     patron = Patron.new("Aeza", "Cat Food")
 
-    assert_equal = [], patron.data
+    assert_equal = "Cat Food", patron.data
   end
 end

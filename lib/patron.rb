@@ -1,9 +1,8 @@
 class Patron
 
   attr_reader :name
-  attr_accessor :interests
 
-  def initialize(name, interest)
+  def initialize(name, data)
     @name = name
     @data = data
   end
@@ -14,5 +13,9 @@ class Patron
 
   def data
     data = []
+  end
+
+  def interests
+    data.add.interests
   end
 end
